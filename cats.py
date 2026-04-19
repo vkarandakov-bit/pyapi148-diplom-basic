@@ -1,7 +1,5 @@
 import json
-import os
 import requests
-from PIL import Image, ImageDraw
 
 group_name = 'PY-148'
 url = 'https://cataas.com/cat'
@@ -11,7 +9,6 @@ text_for_image = input('Введите текст для картинки:')
 print(f'введенный текст:{text_for_image}')
 yd_token = input('Введите токен с Полигона Яндекс.Диска:')
 print(f'введенный токен:{yd_token}')
-params = {'says': text_for_image}
 
 headers = {
     "User-Agent": "Mozilla/5.0"
